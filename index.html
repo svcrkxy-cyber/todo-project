@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Список дел</h1>
+        <form class="to-do__form">
+            <input type="text" class="to-do__input" placeholder="Введите задачу..." required>
+            <button type="submit" class="to-do__button to-do__button_type_add">Добавить</button>
+        </form>
+        <ul class="to-do__list"></ul>
+        <template id="to-do__item-template">
+            <li class="to-do__item">
+                <span class="to-do__item-text"></span>
+                <button class="to-do__item-button to-do__item-button_type_edit" aria-label="Редактировать"></button>
+                <button class="to-do__item-button to-do__item-button_type_duplicate" aria-label="Копировать"></button>
+                <button class="to-do__item-button to-do__item-button_type_delete" aria-label="Удалить"></button>
+            </li>
+        </template>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
