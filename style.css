@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #1a1a1a;
+    background: #000;
     min-height: 100vh;
     padding: 20px;
 }
@@ -16,9 +16,31 @@ body {
     margin: 0 auto;
     background: #000;
     border: 2px solid #fff;
-    border-radius: 0;
+
+git add style.css
+git commit -m "update style"
+git push
+ls -la style.css
+cat > style.css << 'CSS'
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #000;
+    border: 2px solid #fff;
     padding: 30px;
-    box-shadow: 4px 4px 0 #fff;
 }
 
 .title {
@@ -40,7 +62,6 @@ body {
     flex: 1;
     padding: 12px 15px;
     border: 2px solid #fff;
-    border-radius: 0;
     font-size: 16px;
     background: #000;
     color: #fff;
@@ -52,13 +73,12 @@ body {
 
 .to-do__input:focus {
     outline: none;
-    background: #1a1a1a;
+    background: #111;
 }
 
 .to-do__button {
     padding: 12px 25px;
     border: 2px solid #fff;
-    border-radius: 0;
     font-size: 16px;
     cursor: pointer;
     background: #fff;
@@ -92,7 +112,7 @@ body {
 }
 
 .to-do__item-text[contenteditable="true"] {
-    background: #1a1a1a;
+    background: #111;
     padding: 5px 10px;
     border: 2px dashed #fff;
     outline: none;
